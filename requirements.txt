@@ -1,0 +1,11 @@
+aiohttp
+pydantic
+beautifulsoup4
+python-dotenv
+openai
+google-generativeai
+groq
+instructor
+reportlab
+pytest
+feedparser

@@ -1,0 +1,36 @@
+[project]
+name = "ai-orbit-ingestion-pipeline"
+version = "0.1.0"
+description = "AI Orbit Data Ingestion Pipeline"
+authors = [
+    { name = "AI Engineer", email = "ai@example.com" }
+]
+dependencies = [
+    "aiohttp",
+    "pydantic",
+    "beautifulsoup4",
+    "python-dotenv",
+    "openai",
+    "google-generativeai",
+    "groq",
+    "instructor",
+    "reportlab",
+    "feedparser",
+    "pytest"
+]
+readme = "README.md"
+requires-python = ">= 3.9"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ai_orbit"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
