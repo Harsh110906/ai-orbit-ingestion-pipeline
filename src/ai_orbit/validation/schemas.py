@@ -56,6 +56,13 @@ class ToolContent(BaseModel):
     is_open_source: Optional[bool] = None
     launch_date: Optional[str] = None
     status: Optional[str] = None
+    official_website: Optional[str] = None
+    inputs: Optional[str] = None
+    outputs: Optional[str] = None
+    supported_platforms: Optional[str] = None
+    has_api: Optional[bool] = None
+    logo_url: Optional[str] = None
+    last_verified: Optional[str] = None
 
 class CompanyContent(BaseModel):
     name: str
